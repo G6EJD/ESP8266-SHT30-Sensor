@@ -35,7 +35,7 @@ void setup() {
  
 void loop() {
   String webpage = "";  
-  sht30.get(); // Provides temp = sht30.ctemp or sht30.ftemp and sht30.humidity
+  sht30.get(); // Provides temp = sht30.cTemp or sht30.fTemp and sht30.humidity
   // Dew point and Heat Index are derived values from temperature and humidity
   float dew_point = 243.04*(log(sht30.humidity/100)+((17.625*sht30.fTemp)/(243.04+sht30.fTemp)))/(17.625-log(sht30.humidity/100)-((17.625*sht30.fTemp)/(243.04+sht30.fTemp)));
   float RHx       = sht30.humidity;
