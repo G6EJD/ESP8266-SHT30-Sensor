@@ -4,7 +4,7 @@
 #include <ESP8266WebServer.h>
 #include <DNSServer.h>
 #include <WiFiManager.h>  //https://github.com/tzapu/WiFiManager
-#include <WEMOS_SHT3X.h>
+#include <WEMOS_SHT3X.h>  //https://github.com/wemos/WEMOS_SHT3x_Arduino_Library
 
 SHT3X sht30(0x45);        // SHT30 object to enable readings
 String version = "1.0";   // Version of this program
